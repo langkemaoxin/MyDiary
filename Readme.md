@@ -58,11 +58,11 @@
 
 ## 每日行动清单 
  
-### 2026年03月21日  周六
+### 2026年03月21日 周六   [**第1天**]
 今日陪同家人去玩，没有学习。最近有所感悟，想改变自己，彻底摆脱一事无成的自己。于是定下了为期300天的规划。分别使用Gemini和DeepSeek在做规划。还是现在11点钟了，有点累了，明天周日再规划学习路径。
 
 
-### 2026年03月22日 周日 
+### 2026年03月22日 周日  [**第2天**]
 在针对做计划的时候，先前总是想着能够非常的具体，精确到每天什么的，规定好每天的任务，但是这样一来会约束自己，在做计划的时候，任务越是明确，感觉自己的灵活度不够。所以在做计划的初期，我就粗略的定下一个目标，就是得把三个Go项目啃下来，分别是Gin，Prometheus,Geth。具体怎么做，再单独新增一篇文章来处理吧。
 
 目前自己不太懂Go语法，如果还是使用以前的方法，从头到尾的把语法过一遍。那就太慢了。目标就是搞懂这个Gin，进行源码分析，输出文章。语法什么的都是顺手的事情。
@@ -70,6 +70,92 @@
 
 今天主要的内容就是学习 Gin中的使用，和Geth的使用，我先是使用codex，对整个项目进行分析。然后让它来教会我应该如何学习这个项目。
 
- 
 
+今日学习总结：
+
+1、在Gin这个项目中，主要的学习了最简单的Web启动流程中的，这段代码中，了解了
+``` go
+
+func main() {
+	// Create a Gin router with default middleware (logger and recovery)
+	r := gin.Default()
+
+	// Define a simple GET endpoint
+	r.GET("/ping", func(c *gin.Context) {
+		// Return JSON response
+		c.JSON(http.StatusOK, gin.H{
+			"message": "pong",
+		})
+	})
+
+	// Start server on port 8080 (default)
+	// Server will listen on 0.0.0.0:8080 (localhost:8080 on Windows)
+	if err := r.Run(); err != nil {
+		log.Fatalf("failed to run server: %v", err)
+	}
+}
+
+``` 
+
+r.GET("/ping", handler) 是向 Gin 的 Engine 注册一条规则：当收到 GET /ping 请求时，使用这个 handler 处理。真正收到 HTTP 请求后，请求会先进入 ServeHTTP，再进入 handleHTTPRequest。Gin 会根据请求的 Method 和 Path 找到之前注册的 handler，然后把当前请求的 Context 传给它执行。通过 c.Next() 按顺序执行这一组函数。
+
+
+```go
+r.GET("/ping", m1, m2, handler)
+```
+这是注册一条 GET /ping 规则
+这条规则绑定了一组函数：m1、m2、handler
+前面的通常是中间件，最后一个通常是真正业务 handler
+请求来了以后，Gin 找到这条规则
+然后通过 c.Next() 启动这组函数的执行
+中间件里如果不调用 c.Next()，后面通常不会继续执行
+中间件里 c.Next() 前后的代码，分别表示“后续流程前”和“后续流程后”
+所以执行顺序会像这样：
+```
+m1 before
+m2 before
+handler
+m2 after
+m1 after
+```
+
+
+2、go-ethereum项目中的学习情况：
+
+今天再次的学习这个项目时，我没有一上来就学习里面的源码，我让Codex告诉我这个项目能够干什么，是否能够启动起来。
+
+``` sh
+go run .\cmd\geth --dev console
+```
+这会启动一个本地开发用的 Geth 节点，并进入交互控制台
+
+通过这种方式启动时会：
+- 1、自动给你一个测试账户
+- 2、默认可挖矿
+- 3、不连外部网络
+- 4、适合学习和实验
+
+``` 
+运行后节点已经启动成功，而且当前开发链的区块高度是 0。
+
+Using developer account address=...
+意思：Geth 自动给你准备了一个测试账户。
+
+network=1337
+意思：你现在跑的不是以太坊主网，而是一条本地开发链。
+
+Writing custom genesis block
+意思：程序正在写入这条开发链的创世块，也就是第一个区块。
+
+Loaded most recent local block number=0
+意思：当前链上只有创世块，所以高度是 0。
+
+You are running Geth in --dev mode
+意思：这是开发模式，不是正式网络环境。
+
+Networking is disabled
+意思：这个节点不会去连接外部以太坊节点，只在你本机自己玩。
+``` 
+
+今天太晚了，就搞到这里吧。
 
