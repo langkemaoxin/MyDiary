@@ -183,4 +183,6 @@ https://gin-gonic.com/en/docs/introduction/
 晚点github搜下实用的项目？
 
 算了，还是先把那个gin example的项目，全部吃透了再说。
+
+早上上班通勤的路上，学习了朱伟老师恋恋有词的第二课，还没有学完，晚上回家路上继续。
  
