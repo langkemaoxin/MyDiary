@@ -244,5 +244,7 @@ https://roadmap.sh/aspnet-core
 https://roadmap.sh/spring-boot
 安全，自动装配 ，其他的关键组件
 
+晚上回家的地铁路上，听了恋恋有词的视频，学习了一些东西。
+
 
 
