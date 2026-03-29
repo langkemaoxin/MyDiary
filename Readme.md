@@ -497,6 +497,20 @@ https://aistudio.google.com/apps/f02ca462-1c06-43ce-ae63-85e9e96e59bb?showAssist
 但是目前碰到的问题就是无法再当前地区中使用
 
 
+我直接在codex中使用如下命令：
+
+```
+Install and configure oh-my-opencode by following the instructions here:
+https://raw.githubusercontent.com/code-yeongyu/oh-my-openagent/refs/heads/dev/docs/guide/installation.md
+
+如何使用 oh my opencode
+```
+
+貌似就按照好了。
+
+
+
+
 
 ## 项目的分析的可视化
 使用这个项目，把一个比较庞大的系统，通过可视化的方式来展示出来
