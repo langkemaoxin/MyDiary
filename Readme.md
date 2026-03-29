@@ -486,27 +486,6 @@ https://aistudio.google.com/apps/f02ca462-1c06-43ce-ae63-85e9e96e59bb?showAssist
 最后生成真正的IOS应用类的App
 
 
-# OpenCode的使用
-
-使用 oh my opencode,里面集中了一个智能体团队。
-
-比如设置好一个目标之后，计算机会尽可能得实现一个目标
-
-/ralph-loop循环 可以长时间的做一个任务
-
-但是目前碰到的问题就是无法再当前地区中使用
-
-
-我直接在codex中使用如下命令：
-
-```
-Install and configure oh-my-opencode by following the instructions here:
-https://raw.githubusercontent.com/code-yeongyu/oh-my-openagent/refs/heads/dev/docs/guide/installation.md
-
-如何使用 oh my opencode
-```
-
-貌似就按照好了。
 
 
 
@@ -533,3 +512,104 @@ Playwright MCP，安装了之后，还没有怎么使用，貌似就是指挥浏
 
 
 ## 晚上学习了一下 Go方面的基本概念，觉得效果不佳，好慢啊
+
+
+
+
+## 2026年03月29日 周日 [**第9天**]
+这些天，就像一个屯屯鼠一样，收集了很多的Github仓库资料，但是就是在转发，没有深入去了解。
+得把自己看过的的仓库进行深入的了解和研究
+
+这些天，总想着使用OpenCode去完成任务，但是总是会提示区域限制问题。今天终于解决了这个问题，就是用 Tun（虚拟网卡的形式）
+这种形式的话，就是强制走区域流量。
+
+今天的任务是学习OpenCode 
+
+Yutub的视频链接
+https://www.youtube.com/watch?v=JYVTUU9ClUA&t=866s
+
+https://github.com/anomalyco/opencode
+
+可以使用 gemini-3-pro 和 claude-opus-4-5-thinking 模型的插件
+https://github.com/NoeFabris/opencode-antigravity-auth
+
+
+
+安装的方式: 把这个脚本放入到 codex命令行中
+``` sh
+Install the opencode-antigravity-auth plugin and add the Antigravity model definitions to ~/.config/opencode/opencode.json by following: https://raw.githubusercontent.com/NoeFabris/opencode-antigravity-auth/dev/README.md
+
+```
+
+然后自己就接入进来了。
+
+
+使用/Connect 可以接入任何模型
+
+比如：使用OpenRouter进行接入
+
+
+/session  会话列表
+
+/share 
+
+
+# Oh my opencode  里面集中了一个智能体团队。
+> 预设工具 + 预设MCP + 预设Agent
+
+## 预设MCP
+websearch 实施搜索
+Context7 获取代码的最新官方文档
+grep_app 在github仓库中进行快速的代码搜索
+
+
+## 安装
+```
+Install and configure oh-my-opencode by following the instructions here:
+https://raw.githubusercontent.com/code-yeongyu/oh-my-openagent/refs/heads/dev/docs/guide/installation.md
+```
+
+
+
+
+## 使用方式1
+使用@的方式，挑选一个智能体给我们干活
+
+## ulw 魔法词，可以开启一个模式，设置好一个目标之后，计算机会尽可能得实现一个目标
+Ultraworker
+
+设计一个宠物店的网站
+
+
+
+## /ralph-loop循环 可以长时间的做一个任务
+
+例子： `/ralph-loop 使用springboot4最新标准重构整个项目，直到所有测试用例通过`
+
+可以运行好几个小时，直到任务完成
+
+
+## 常用命令
+/init  创建一个Agents.md 帮助AI快速了解项目
+/compact 把之前的对话提炼成一个简单的对话
+
+## 自定义命令
+
+在C:\Users\CGY\.config\opencode\command 下面 可以自定义命令
+
+比如：run_test
+
+C:\Users\CGY\.config\opencode\command\run_test.md
+
+
+我就发起了一个指令，让你系统自动安装好 mcp
+https://github.com/github/github-mcp-server
+
+
+
+# 用于生成PPT，但是得消耗比较多的Token
+https://github.com/Anionex/banana-slides
+
+
+# 网络抓取工具
+https://github.com/D4Vinci/Scrapling
