@@ -615,3 +615,24 @@ https://github.com/D4Vinci/Scrapling
 
 #### 多Agent的分工合作
 https://github.com/cft0808/edict
+
+
+
+#### 晚上做的事情
+
+我向Codex发送了一个请求：
+
+```
+我的需求是想要你把我的这个文件夹推到我的Github仓库区，那么当我发出指令开始到最后成功了，中间究竟是经历了什么步骤？
+你是如何解决的？到后面为什么要使用这个 gh? 这个究竟是什么？ 关于这个opencode究竟是如何和github mcp进行交互的，要说明清楚
+ 
+请你作为一个名资深的写作专家，把上述的内容，写一个一篇博客。
+
+放在 D:\Github\langkemaoxin.github.io\_posts下
+
+要求需要符合我的博客格式。
+
+完成后，D:\Github\langkemaoxin.github.io 是一个我的博客github项目，把他给提交，并且推送出去
+```
+
+然后我让opencode 把我刚刚的行为固化下来，形成一个Skill，后续在处理完问题后，就可以直接解决了什么问题，记录到一个我的github的个人站点上了
