@@ -290,54 +290,6 @@ if __name__ == "__main__":
 
 还有各种Skills，MCP什么的，自己的没有了解，真的是睁眼瞎了。
 
-<https://github.com/Donchitos/Claude-Code-Game-Studios>
-这个项目中，使用48个 agents,skills ，
-
-别人都是AI Agent军团了，你还在单兵作战？而且还用不好工具？
-
-和 Claude Code 有关的插件，究竟如何使用呢？有什么作用呢？得稍微了解一下才行
-
-<https://github.com/supermemoryai/supermemory>
-
-<https://github.com/obra/superpowers>
-
-<https://github.com/affaan-m/everything-claude-code>
-
-高效率的网络爬虫
-<https://github.com/D4Vinci/Scrapling>
-
-<https://www.claude-cn.org/claude-code-docs-zh/README.ht>
-
-用来精简代码的插件
-<https://claude.com/plugins/code-simplifier>
-
-Agentic Design Patterns 系统介绍 AI Agent 系统的各种设计模式
-<https://adp.xindoo.xyz/>
-<https://github.com/xindoo/agentic-design-patterns>
-
-Agent工作流，底层是 Langchain和 LangGranph
-<https://github.com/bytedance/deer-flow>
-
-这些 Skill，究竟能够干什么呢
-<https://github.com/VoltAgent/awesome-openclaw-skills>
-
-AI军团，打造一个杀人团队的
-Enterprise AI Orchestration Platform 60+ Specialized Agents
-<https://github.com/ruvnet/ruflo>
-
-Agent编排器
-<https://github.com/superset-sh/superset>
-
-<https://github.com/karpathy/autoresearch>
-
-网络爬虫，把整个网站变成markdown格式的或者结构化的数据形式
-<https://github.com/firecrawl/firecrawl>
-
-午饭过后，手机上面刷到了有关于AI相关的短视频，感觉自己都已经跟不上时代了，得好好的学习一番才行。
-
-目前发现整个 codex的消耗还是很大，发现了这个项目，可以节省Token
-
-<https://github.com/rtk-ai/rtk>
 
 今日总结：今天上午主要是扩展自己的知识面，看看前沿的技术都有什么，AI相关的，下午所有的时间都在AI上面了，虽然也是使用Codex进行了代码工作。但是对于ClaudeCode和Ai Agent节点流程编辑，还是不懂
 
@@ -346,6 +298,9 @@ Agent编排器
 今天已经列举了很多的Github仓库连接。得每个仓库都要花时间去学习，起码能够跑起来，看看是什么效果才行。
 
 不过，今天有些点还是没有做好。就是，通勤时间没有完全利用起来，应该全部用来学习英语单词的。Go语言今天没有任何进步，区块链也是没有任何的进步。今天打个差评。工作时间太长了，得缩短一些才行。要有更多的时间用来学习新的知识。看新的网站和github仓库。
+
+[2026-03-25-整理的资料集合](./2026-03-25-整理的资料集合.md)
+
 
 ### 2026年03月26日 周四  [**第6天**]
 
@@ -394,36 +349,8 @@ Agent编排器
 
 还有一个，能够让我们去使用页面登录，然后就可以免费使用API了，这两个仓库先好好的看看。
 
-<https://github.com/e2b-dev/awesome-ai-agents>
+[2026-03-27-整理的资料集合](./2026-03-27-整理的资料集合.md)
 
-<https://github.com/Jenqyang/Awesome-AI-Agents>
-
-<https://github.com/jim-schwoebel/awesome_ai_agents>
-
-<https://github.com/Shubhamsaboo/awesome-llm-apps>
-
-<https://github.com/Shubhamsaboo/awesome-llm-apps?tab=readme-ov-file>
-
-公司里面用到了 deepagents，这个得花时间来研究一下究竟是用来干什么的，如果对这个不懂的话，那么就无法做项目了
-
-<https://github.com/langchain-ai/deepagents>
-
-<https://github.com/langchain-ai/langchain>
-
-<https://github.com/langchain-ai/langgraph>
-
-今晚把这三个项目拉下来了，并且使用 codex分析了学习的路径
-
-<https://github.com/crewAIInc/crewAI?tab=readme-ov-file> 这个项目是用来和 deepagents类似的工作
-
-<https://github.com/jnMetaCode/agency-agents-zh>
-
-<https://github.com/msitarzewski/agency-agents>
-
-这个仓库中，定义了很多个用户的角色很多个智能体
-
-<https://github.com/bmad-code-org/BMAD-METHOD>
-这个定义了一个人的团队
 
 ## 2026年03月28日 周六 [**第8天**]
 
@@ -603,3 +530,7 @@ C:\Users\CGY\.config\opencode\command\run_test.md
 所以我现在得先知道，关于区块链，以太坊现在最新的咨询和信息才行。
 
 [2026-03-31-整理的资料集合](./2026-03-31-整理的资料集合.md)
+
+最近收集了很多的项目，总算是对整个网络情况，网络社会情况有了一定的了解。所以现在需要做的就是制定好学习的计划。因为每个人的时间，经历都是有限的，不能想屯屯鼠一样，收集了很多，但是从未开始。
+
+收集资料的时候，是一种，只要收集了，就能学到位了的感觉。但是我这次的感觉是，自己能够了解，网上有什么资料，可以让我去学习。
