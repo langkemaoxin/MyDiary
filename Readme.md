@@ -801,6 +801,49 @@ npx -y @tencent-weixin/openclaw-weixin-cli@latest install
 现在的问题是，如何在工作当中，去学习到AI相关的知识？一个可行的方式时，看看做AI的同时究竟是在干什么，提交了什么代码。
 虽然无法跟着课程学习，但是起码在工作中靠拢。
 
+二是，如果我想要成为AI方面的专家，那么我应该看哪些资料？
+
+
+## 2026年04月10日 周五 [**第21天**]
+
+今天碰到了一个问题就是，我在使用Codex去帮我写代码的时候，用得太狠了，昨晚写了一个商城的项目，几乎榨干了所有的额度。
+
+然后早上让AI生成了一些代码之后，额度为0了，还得让我下午3点钟重置。
+
+导致我现在只能找下平替方案。
+
+我看到了智普AI中的Vibeing Coding计划 和 硅基流动的 CoddingPlan计划
+
+https://bailian.console.aliyun.com/cn-beijing#/home
+
+
+
+我先是研究了一下 硅基流动 API 我选用了一个最便宜的模型 
+Too Many Requests: Request was rejected due to rate limiting. Details: TPM limit... [retrying in 28s attempt #5]
+
+
+阿里云百炼的 的 Coding Plan竟然要 200块钱一个月
+每月请求额度至高 90,000 次
+最多 6,000 次 每 5 小时
+最多 45,000 次 每周
+最多 90,000 次 每月
+完美兼容 Cline、OpenClaw、Claude Code 及 Qwen Code
+推荐模型：qwen3.6-plus（支持图片理解）、kimi-k2.5（支持图片理解）、glm-5、MiniMax-M2.5
+更多模型：qwen3.5-plus（支持图片理解）、qwen3-max-2026-01-23、qwen3-coder-next、qwen3-coder-plus、glm-4.7
+
+硅基流动貌似没有Coding Plan
+默认16块钱，我一个任务都没搞完，就花了 6.93块钱了，我还不如自己搭建一个GM 服务。
+
+
+魔塔社区
+https://www.modelscope.cn/
+
+貌似是一个下载模型的社区
+
+智普
+https://bigmodel.cn/glm-coding
+
+
 
 - ⭕8-12Tavily搜索工具.mp4
 - ⭕9-13Agent代理的使用.mp4
